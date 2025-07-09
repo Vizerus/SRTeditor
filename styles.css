@@ -311,9 +311,9 @@ h1 {
     text-align: center;
     outline: none;
     box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-    appearance: textfield;
     -webkit-appearance: none;
     -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .floating-time-input:focus {

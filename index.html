@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container" id="mainContainer">
-        <h1>SRT Subtitle Timing Adjuster</h1>        
+        <h1>SRT Subtitle Timing Adjuster</h1>
         <div class="step step-1" id="step1">
             <div class="upload-section">
                 <label for="srtFile" class="file-label">
@@ -17,43 +17,27 @@
                 </label>
             </div>
         </div>
-        
         <div class="step step-2" id="step2" style="display:none;">
             <div class="adjustment-section">
                 <label for="timeAdjustment">Time Adjustment (seconds):</label>
                 <input type="number" id="timeAdjustment" step="0.1" placeholder="e.g., -3 to delay by 3 seconds" class="time-input">
                 <small>Use negative values to delay subtitles, positive values to advance them</small>
             </div>
-            <div class="button-section">
-                <button id="processBtn" class="process-btn" disabled>Process SRT File</button>
-            </div>
+            <div class="button-section"><button id="processBtn" class="process-btn" disabled>Process SRT File</button></div>
         </div>
-        
-        <div class="step step-3" id="step3" style="display:none; height: 100%; flex: 1 1 auto; display: flex; flex-direction: column;">
-            <div class="preview-container" style="flex: 1 1 auto; min-height: 0;">
-                <div class="preview-column">
-                    <h4>Original</h4>
-                    <pre id="originalPreview" class="preview-content"></pre>
-                </div>
-                <div class="preview-column">
-                    <h4>Adjusted</h4>
-                    <textarea id="adjustedPreview" class="preview-content" style="resize:vertical;"></textarea>
-                </div>
+        <div class="step step-3" id="step3" style="display:none; height:100%;flex:1 1 auto;display:flex;flex-direction:column;">
+            <div class="preview-container" style="flex:1 1 auto;min-height:0;">
+                <div class="preview-column"><h4>Original</h4><pre id="originalPreview" class="preview-content"></pre></div>
+                <div class="preview-column"><h4>Adjusted</h4><textarea id="adjustedPreview" class="preview-content" style="resize:vertical;"></textarea></div>
             </div>
-            <!-- Floating controls -->
             <div class="floating-controls">
                 <div id="floatingTooltip" class="floating-tooltip"></div>
-                <button id="scrollToTopBtn" class="floating-scrolltop-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/><line x1="12" y1="9" x2="12" y2="21"/></svg>
-                </button>
+                <button id="scrollToTopBtn" class="floating-scrolltop-btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/><line x1="12" y1="9" x2="12" y2="21"/></svg></button>
                 <input type="number" id="floatingTimeAdjustment" step="0.1" class="floating-time-input">
-                <button id="downloadBtn" class="floating-download-btn" disabled>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                </button>
+                <button id="downloadBtn" class="floating-download-btn" disabled><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></button>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
