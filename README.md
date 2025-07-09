@@ -2,7 +2,9 @@
 
 sup y'all! this is a super simple tool to shift all subtitles in an .srt file by any amount of seconds you want.
 
-alternatively you can manually edit them in the adjusted preview
+alternatively you can manually edit them in the adjusted preview.. but modifying the global delay will reset your manual changes atm so care.
+
+i made it real quick bc i realized the subtitles are out of sync on a movie i was watching with the fam on vacation, hope it helps someone!
 
 ## how to use
 1. extract the main folder somewhere
@@ -11,11 +13,11 @@ alternatively you can manually edit them in the adjusted preview
 4. you can tweak the delay on the fly or edit the adjusted subs before downloading
 
 ## files
-- `index.html` — the app
-- `styles.css` — makes it look nice
+- `index.html` — open this to do ya thang
+- `styles.css` — makes it look nice(r)
 - `script.js` — does the work
 
-## todo (maybe)
+## todo (maybe one day xd)
 - drag & drop srt file
 - dark mode
 - support for other subtitle formats
